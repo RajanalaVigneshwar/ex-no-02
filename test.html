@@ -1,0 +1,117 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Plant Nursery</title>
+</head>
+<body>
+
+    <h2>🌿 Online Plant Nursery Order Form 🌿</h2>
+
+    <form>
+
+        <!-- Customer Name -->
+        <label for="name">Customer Name</label><br>
+        <input type="text" id="name" name="name"
+        placeholder="Enter your full name"
+        pattern="[A-Za-z ]{3,30}" required>
+        <br><br>
+
+        <!-- Email -->
+        <label for="email">Email Address</label><br>
+        <input type="email" id="email" name="email"
+        placeholder="example@gmail.com" required>
+        <br><br>
+
+        <!-- Password -->
+        <label for="password">Create Password</label><br>
+        <input type="password" id="password" name="password"
+        minlength="6" required>
+        <br><br>
+
+        <!-- Mobile Number -->
+        <label for="mobile">Mobile Number</label><br>
+        <input type="tel" id="mobile" name="mobile"
+        pattern="[0-9]{10}"
+        placeholder="Enter 10-digit number" required>
+        <br><br>
+
+        <!-- Age -->
+        <label for="age">Customer Age</label><br>
+        <input type="number" id="age" name="age"
+        min="18" max="80" required>
+        <br><br>
+
+        <!-- Order Date -->
+        <label for="date">Order Date</label><br>
+        <input type="date" id="date" name="date" required>
+        <br><br>
+
+        <!-- Gender -->
+        <label>Gender</label><br>
+        <input type="radio" name="gender" value="Male"> Male
+        <input type="radio" name="gender" value="Female"> Female
+        <input type="radio" name="gender" value="Other"> Other
+        <br><br>
+
+        <!-- Plant Categories -->
+        <label>Choose Plant Category</label><br>
+        <input type="checkbox" name="plant" value="Flowering"> Flowering Plants<br>
+        <input type="checkbox" name="plant" value="Indoor"> Indoor Plants<br>
+        <input type="checkbox" name="plant" value="Medicinal"> Medicinal Plants<br>
+        <input type="checkbox" name="plant" value="Fruit"> Fruit Plants
+        <br><br>
+
+        <!-- Plant Type -->
+        <label for="type">Plant Type</label><br>
+        <select id="type" required>
+            <option value="">--Select Plant--</option>
+            <option>Rose</option>
+            <option>Tulsi</option>
+            <option>Money Plant</option>
+            <option>Aloe Vera</option>
+            <option>Jasmine</option>
+            <option>Mango Plant</option>
+        </select>
+        <br><br>
+
+        <!-- Quantity -->
+        <label for="qty">Quantity</label><br>
+        <input type="number" id="qty" min="1" max="20" required>
+        <br><br>
+
+        <!-- Address -->
+        <label for="address">Delivery Address</label><br>
+        <textarea id="address" rows="4" cols="40"
+        placeholder="Enter your complete address"
+        required></textarea>
+        <br><br>
+
+        <!-- Favorite Pot Color -->
+        <label for="color">Select Pot Color</label><br>
+        <input type="color" id="color">
+        <br><br>
+
+        <!-- Upload Garden Photo -->
+        <label for="photo">Upload Your Garden Photo</label><br>
+        <input type="file" id="photo">
+        <br><br>
+
+        <!-- Gardening Experience -->
+        <label for="experience">Gardening Experience</label><br>
+        Beginner
+        <input type="range" id="experience"
+        min="0" max="100">
+        Expert
+        <br><br>
+
+        <!-- Submit & Reset -->
+        <input type="submit" value="Place Order">
+        <input type="reset" value="Clear Form">
+
+    </form>
+
+</body>
+</html>
